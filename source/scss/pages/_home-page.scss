@@ -1,0 +1,267 @@
+.pt-page {
+  padding-left: 15px;
+  margin: 0 auto;
+  overflow: auto;
+
+  .section-inner {
+    position: relative;
+    height: auto;
+    background-color: transparent;
+    padding: 50px 70px 70px;
+    background-color: #fff;
+  }
+
+  .section-inner.start-page-full-width {
+    min-height: auto;
+    padding: 0;
+
+    div[class^=col-] {
+      padding: 0 !important;
+    }
+
+    .row {
+      margin-right: 0;
+      margin-left: 0;
+    }
+
+    .inner-content {
+      height: 100%;
+      min-height: 100%;
+
+      .fill-block {
+        position: relative;
+        height: 100%;
+        min-height: 300px;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .fill-block {
+        background-image: url("../images/sp_photo.jpg");
+      }
+    }
+
+    .hp-text-block {
+      padding: 70px 15%;
+      background-color: #fcfcfc;
+      height: 100%;
+      min-height: 100px;
+
+      h3 {
+        color: #888;
+        font-weight: 300;
+        font-size: 16px;
+      }
+
+      .hp-main-title {
+        font-size: 48px;
+        line-height: 1.2em;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+
+.block-title {
+  h3 {
+    display: inline-block;
+    font-size: 21px;
+    padding-bottom: 3px;
+
+    &:after {
+      content: '';
+      height: 3px;
+      width: 100%;
+      border-radius: 5px;
+      margin-bottom: 5px;
+      display: block;
+      background: $style-of-me;
+    }
+  }
+
+  h6 {
+    display: inline-block;
+    margin-left: 4px;
+    font-weight: 300;
+    color: #999;
+    font-size: 1rem;
+  }
+}
+
+.info-block-w-icon {
+  position: relative;
+  text-align: left;
+  width: 100%;
+  display: table;
+  margin: 0;
+  padding: 10px 10px 10px 0;
+
+  i.lnr {
+    transition: all 0.5s ease-in-out;
+  }
+
+  &:hover i.lnr {
+    color: $style-of-me;
+  }
+
+  .ci-icon {
+    width: 54px;
+    padding-right: 25px;
+  }
+
+  i {
+    position: relative;
+    font-size: 42px;
+    color: #888;
+  }
+
+  .ci-text {
+    position: relative;
+    padding: 0;
+    vertical-align: middle;
+
+    h4 {
+      margin: 5px 0;
+      font-size: 18px;
+    }
+
+    p {
+      font-size: 0.92em;
+    }
+  }
+}
+/*======START BLOCK: SKILL======*/
+.pt-page {
+  .section-inner {
+    .section-title-block {
+      margin-bottom: 40px;
+
+      span.heading-meta {
+        margin-bottom: 5px;
+        display: block;
+        color: #999;
+        font-weight: 300;
+        font-size: 1rem;
+        letter-spacing: 1px;
+      }
+
+      .section-title {
+        color: #333;
+        font-size: 30px;
+        font-family: $font-heading;
+        font-weight: 600;
+        font-style: normal;
+        letter-spacing: 0;
+        margin: 0 0 8px;
+        line-height: 1.5em;
+      }
+
+      &:after {
+        display: block;
+        content: '';
+        width: 100%;
+        margin-top: 5px;
+        height: 2px;
+        background-color: #eee;
+        opacity: 1;
+      }
+    }
+  }
+
+  .section-content {
+    .progress-wrap {
+      padding: 10px 0;
+
+      h4 {
+        font-size: 13px;
+        margin-bottom: 10px;
+      }
+      &:hover > .progress > .progress-bar {
+        animation: progress-bar-stripes 1s linear infinite; /* bootstrap progress da dinh nghia*/
+        background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+        background-size: 1rem 1rem;
+      }
+    }
+
+    .progress {
+      height: 10px;
+      border: 1px solid $style-of-me;
+      padding: 1px;
+
+      .progress-bar {
+        background: $style-of-me;
+        border-radius: 8px;
+      }
+
+    }
+  }
+}
+/*======END BLOCK: SKILL======*/
+/*======START BLOCK: EDUCATION======*/
+
+.education-wrapper {
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 18px;
+    bottom: 0;
+    left: 0;
+    width: 2px;
+    background: #eee;
+  }
+
+  .education {
+    position: relative;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 18px;
+      left: -7px;
+      width: 16px;
+      height: 16px;
+      border-radius: 10px;
+      z-index: 1;
+      background: $style-of-me;
+      transition: all 0.3s ease-in-out;
+    }
+
+    &:hover {
+      box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15)!important;
+    }
+
+    &:hover:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -7px;
+      width: 16px;
+      height: 16px;
+      border-radius: 10px;
+      z-index: 2;
+      background: $style-of-me;
+    }
+  }
+}
+
+h3.name-education {
+  font-size: 21px;
+  margin-bottom: 3px;
+}
+
+h4.font-style-meta {
+  font-size: 16px;
+  color: $style-of-me;
+}
+
+h5.year-graduated {
+  font-size: 14px;
+  color: #999;
+}
+/*======END BLOCK: EDUCATION======*/

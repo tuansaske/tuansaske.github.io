@@ -1,0 +1,99 @@
+body::-webkit-scrollbar {
+  position: absolute;
+  width: 8px;
+  margin-left: -8px;
+}
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,.2);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #9e9e9e;
+  outline: 1px solid slategrey;
+}
+@media only screen and (min-width: 991px) {
+  .header::-webkit-scrollbar,
+  body::-webkit-scrollbar {
+    position: absolute;
+    width: 5px;
+    margin-left: -5px;
+  }
+
+  .header::-webkit-scrollbar-track,
+  body::-webkit-scrollbar-track {
+    background-color: #fcfcfc;
+  }
+
+  .header::-webkit-scrollbar-thumb,
+  body::-webkit-scrollbar-thumb {
+    background-color: #dedede;
+    outline: 1px solid slategrey;
+  }
+
+  .site-main {
+    margin-left: 160px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .pt-wrapper {
+    padding: 0;
+    margin: 0;
+  }
+
+  .pt-page,
+  .pt-page.start-page,
+  .pt-page.start-page.first-style {
+    padding-left: 0;
+  }
+
+  .header {
+    width: 100%;
+    max-width: 320px;
+    height: calc(100% - 50px);
+    left: 0;
+    top: 50px;
+    z-index: 1001;
+    opacity: 1;
+    overflow: auto;
+    visibility: visible;
+    -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,.18);
+    -moz-box-shadow: 0 0 10px 0 rgba(0,0,0,.18);
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.18);
+    -webkit-transition: all 0s ease-in-out;
+    -moz-transition: all 0s ease-in-out;
+    -o-transition: all 0s ease-in-out;
+    -ms-transition: all 0s ease-in-out;
+    transition: all 0s ease-in-out;
+  }
+
+  .header.animate {
+    -webkit-transition: all 0.44s ease-in-out;
+    -moz-transition: all 0.44s ease-in-out;
+    -o-transition: all 0.44s ease-in-out;
+    -ms-transition: all 0.44s ease-in-out;
+    transition: all 0.44s ease-in-out;
+  }
+
+  .mobile-menu-hide {
+    width: 0;
+    left: 0;
+    margin-left: -100%;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .pt-page .section-inner {
+    padding: 25px 30px 60px;
+    margin-left: 0;
+  }
+
+  .hp-text-block {
+    padding: 30px 30px 50px !important;
+  }
+}

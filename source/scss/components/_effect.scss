@@ -1,0 +1,23 @@
+.over-flow-zoom-animate {
+  overflow: hidden;
+}
+
+.hover-zoom-animate {
+  transform: scale(1);
+  transition: .3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.2);
+    width: 100%;
+    transition: .3s ease-in-out;
+  }
+}
+
+.header-content:hover > .my-photo > img {
+  border-radius: 50%;
+  transition: .3s ease-in-out;
+}
+
+.header-content > .my-photo > img {
+  transition: .3s ease-in-out;
+}

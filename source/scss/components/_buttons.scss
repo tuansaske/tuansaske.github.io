@@ -1,0 +1,42 @@
+.hp-buttons {
+  margin-top: 30px;
+}
+
+.btn-primary,
+.btn-secondary,
+button,
+input[type=button],
+input[type=submit] {
+  display: inline-block;
+  position: relative;
+  padding: 0.8em 2em;
+  margin-bottom: 0.25em;
+  font-size: 1em;
+  line-height: 1.2;
+  border: 0;
+  outline: 0;
+  border: 2px solid $style-of-me;
+  color: #222;
+  text-shadow: none;
+  background-color: #fff;
+  border-radius: 0;
+  font-family: poppins,Helvetica,sans-serif;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:focus,
+.btn-primary:hover,
+button:focus,
+button:hover,
+input[type=button]:focus,
+input[type=button]:hover,
+input[type=submit]:focus,
+input[type=submit]:hover {
+  background-color: $style-of-me;
+  border-color: $style-of-me;
+  color: #fff;
+}
