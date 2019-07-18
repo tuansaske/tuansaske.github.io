@@ -12,26 +12,43 @@
   <h2>HTML Forms</h2>
 
   <form action="https://script.google.com/macros/s/AKfycbzKBagWxsMb9hSo5uwOtdXTeIZv3-N0hq5hpCUTMdCsEzDDDbw/exec m" method="POST" class="gform">
-    First name:<br>
-    <input type="text" name="firstname" value="Mickey">
+    Họ Tên:<br>
+    <input type="text" name="hoTen" class="hoTen" minlength="6" maxlength="36" required>
     <br>
-    Last name:<br>
-    <input type="text" name="lastname" value="Mouse">
+    Email:<br>
+    <input type="email" pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$" required>
+    <br><br>
+    Số điện thoại:<br>
+    <input type="tel" placeholder="+84339899969" pattern="^\+?(?:[0-9]??).{9,15}[0-9]$" required>
+    <br><br>
+    Nội dung:<br>
+    <input type="text" name="noiDung" minlength="6" required>
     <br><br>
     <button type="submit" value="button">Gửi</button>
   </form>
+
 
   <div id="thankyou_message">
     <h2>Cảm ơn bạn đã liên hệ đến tôi. Tôi sẽ liên hệ lại bạn sớm nhất nhé!</h2>
   </div>
   <style type="text/css">
-    #thankyou_message{
+    #thankyou_message {
       display: none;
     }
   </style>
-
   <script>
     (function() {
+
+      // custom popup check validation
+      $("input[name=hoTen]")[0].oninvalid = function() {
+        this.setCustomValidity("Please enter at least 5 - 36 characters.");
+      };
+      $("input[name=hoTen]")[0].oninput = function() {
+        this.setCustomValidity("");
+      };
+
+      //end: custom popup check validation
+
 
       function validateHuman(honeypot) {
         if (honeypot) { //if hidden form filled up
@@ -118,7 +135,9 @@
           console.log(xhr.responseText);
           form.reset();
 
-          $("#thankyou_message").css({"display": "block"});
+          $("#thankyou_message").css({
+            "display": "block"
+          });
           alert("cảm ơn bạn đã liên hệ");
           return;
         };
