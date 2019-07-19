@@ -1,6 +1,10 @@
+.pt-page:last-child {
+  margin-bottom: 0;
+}
+
 .pt-page {
   padding-left: 15px;
-  margin: 0 auto;
+  margin: 0 auto 15px;
   overflow: auto;
 
   .section-inner {
@@ -64,7 +68,7 @@
   }
 
   .section-content {
-    padding: 30px 0 0;
+    padding: 10px 0 0;
   }
 }
 
@@ -289,15 +293,15 @@ h5.year-graduated {
   width: 100%;
   display: block;
   margin-bottom: 30px;
-  background: #fff;
   padding: 20px 10px 15px;
-  border: 1px solid $style-of-me;
+  // border: 1px solid $style-of-me;
   transition: all 0.2s ease-in-out;
+  background: #f5f5f5;
 
   i {
     position: relative;
     font-size: 40px;
-    color: #888;
+    color: $style-of-me;
   }
 
   h4 {
@@ -307,6 +311,11 @@ h5.year-graduated {
       color: inherit;
     }
   }
+}
+
+.lm-info-block:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  background: #fff;
 }
 
 .form-control::placeholder {
@@ -332,17 +341,19 @@ h5.year-graduated {
 input[type="search"],
 input[type="password"],
 input[type="text"] {
-  border: 1px solid #dfdfdf;
+  border: 1px solid #ececec;
   border-radius: 0;
   font-size: 1em;
   margin: 0;
-  padding: 10px 25px 10px 12px;
+  padding: 18px 25px 18px 18px;
   width: 100%;
-  background: 0 0;
+  // background: 0 0;
   color: inherit;
   box-shadow: none;
   outline: none;
   font-family: 'Poppins',Helvetica,sans-serif;
+  font-weight: 300;
+  background: #f5f5f5;
 }
 
 .thankyou_message {
