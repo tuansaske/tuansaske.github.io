@@ -475,33 +475,41 @@
                 <div class="row">
                   <div class=" col-xs-12 col-sm-8 offset-sm-1 offset-sm-2">
                     <form action="https://script.google.com/macros/s/AKfycbzKBagWxsMb9hSo5uwOtdXTeIZv3-N0hq5hpCUTMdCsEzDDDbw/exec" method="POST" class="gform">
-                      <div class="form-group">
 
-                        <input type="text" class="form-control" id="hoTen" placeholder="Name" name="hoTen" class="hoTen" minlength="6" maxlength="36" required>
-                      </div>
                       <div class="form-group">
-                        <input class="form-control" type="tel" name="phoneNumber" id="phoneNumber" placeholder="Phone: +84339899969" pattern="^\+?(?:[0-9]??).{9,15}[0-9]$" required>
+                        <input type="text" class="form-control effect-1" id="hoTen" placeholder="Name" name="hoTen" class="hoTen" minlength="6" maxlength="36" required>
+                        <span class="focus-border"></span>
                       </div>
-                      <div class="form-group">
 
-                        <input class="form-control" name="email" id="email" type="email" placeholder="Email: fbbnat@example.com"
+                      <div class="form-group">
+                        <input class="form-control effect-1" type="tel" name="phoneNumber" id="phoneNumber" placeholder="Phone: +84339899969" pattern="^\+?(?:[0-9]??).{9,15}[0-9]$" required>
+                        <span class="focus-border"></span>
+                      </div>
+
+                      <div class="form-group">
+                        <input class="form-control effect-1" name="email" id="email" type="email" placeholder="Email: fbbnat@example.com"
                           pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$"
                           required>
+                          <span class="focus-border"></span>
                       </div>
+
                       <div class="form-group">
-                        <input class="form-control" name="subject" id="subject" type="text" placeholder="Subject: Invite Event Front-End Dev">
+                        <input class="form-control effect-1" name="subject" id="subject" type="text" placeholder="Subject: Invite Event Front-End Dev">
+                        <span class="focus-border"></span>
                       </div>
+
                       <div class="form-group">
-                        <textarea class="form-control" name="message" id="message" rows="5" placeholder="Message: console&#46;log&#40;&#34;Hello Word!&#34;&#41;" maxlength="1200" required></textarea>
+                        <textarea class="form-control effect-1" name="message" id="message" rows="5" placeholder="Message: console&#46;log&#40;&#34;Hello Word!&#34;&#41;" maxlength="1200" required></textarea>
+                        <span class="focus-border"></span>
                       </div>
-                      <div>
+
                         <div class="alert alert-success thankyou_message" role="alert">
                           Thank you! I will contact you soon!
                           <div class="close" data-dismiss="alert" aria-label="Close" style="cursor: pointer;">
                             <span aria-hidden="true">&times;</span>
                           </div>
                         </div>
-                      </div>
+
                       <button type="submit" class="button btn-send">Send message</button>
                     </form>
                   </div>

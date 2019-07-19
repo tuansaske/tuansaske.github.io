@@ -141,7 +141,6 @@
   }
 }
 /*======START BLOCK: SKILL======*/
-
 .pt-page {
   .section-inner {
     .section-title-block {
@@ -210,6 +209,7 @@
 }
 /*======END BLOCK: SKILL======*/
 /*======START BLOCK: EDUCATION======*/
+
 .education-wrapper {
   position: relative;
 
@@ -275,7 +275,6 @@ h5.year-graduated {
 }
 /*======END BLOCK: EDUCATION======*/
 /*======START BLOCK: CONTACT======*/
-
 .bg-heading-footer {
   background-image: url("../images/coding-wallpaper-1920x1080.jpg");
   position: relative;
@@ -318,42 +317,48 @@ h5.year-graduated {
   background: #fff;
 }
 
-.form-control::placeholder {
+input.form-control::placeholder,
+textarea.form-control::placeholder {
   color: #adadac !important;
   opacity: 1;
   /* Firefox */
 }
 
-.form-control::-ms-input-placeholder {
+input.form-control::-ms-input-placeholder,
+textarea.form-control::-ms-input-placeholder {
   /* Internet Explorer 10-11 */
   color: #adadac !important;
 }
 
-.form-control::-ms-input-placeholder {
+input.form-control::-ms-input-placeholder,
+textarea.form-control::-ms-input-placeholder {
   /* Microsoft Edge */
   color: #adadac !important;
 }
 
-.form-control,
-.form-control:focus,
-.has-error .form-control,
-.has-error .form-control:focus,
-input[type="search"],
-input[type="password"],
-input[type="text"] {
+input.form-control,
+textarea.form-control {
   border: 1px solid #ececec;
   border-radius: 0;
   font-size: 1em;
   margin: 0;
   padding: 18px 25px 18px 18px;
   width: 100%;
-  // background: 0 0;
   color: inherit;
   box-shadow: none;
   outline: none;
   font-family: 'Poppins',Helvetica,sans-serif;
   font-weight: 300;
   background: #f5f5f5;
+}
+
+input.form-control:focus,
+textarea.form-control:focus {
+  color: #000;
+  background: #ececec;
+  outline: none;
+  box-shadow: none;
+  border: 1px solid #ececec;
 }
 
 .thankyou_message {
