@@ -63,6 +63,15 @@
     </header>
     <!--END: HEADER--->
 
+    <!--START: HEADER MOBILE-->
+    <div class="mobile-header mobile-visible">
+      <div class="mobile-logo-container">
+        <div class="mobile-header-image"> <a href="https://tuansaske.github.io/"> <img src="assets/images/avatar-250x250.jpg" alt="image"> </a> </div>
+        <div class="mobile-site-title"><a href="https://tuansaske.github.io/public/">Tuan, Nguyen Anh</a></div>
+      </div><a class="menu-toggle mobile-visible"> <i class="fa fa-bars"></i> </a>
+    </div>
+    <!--END: HEADER MOBILE-->
+
     <!--START: MAIN-->
     <div id="main" class="site-main">
       <div class="pt-wrapper">
@@ -316,7 +325,8 @@
                         <h3 class="name-education">FPT Polytechnic College</h3>
                         <h4 class="font-style-meta"><i class="fas fa-book-reader ma-r-10px"></i>Website Design & Programming</h4>
                         <h5 class="year-graduated"><i class="fas fa-graduation-cap ma-r-10px"></i>Graduated in July, 2015</h5>
-                        <p class="ma-bt-30px">I know "how to design websites" as Word, Photoshop,  design Responsive Website, Application and android with Htm5, Css3, jQuery, JavaScript, PHP. I can cut PSD to Html.(Tôi học được, cách thiết kế website bằng Photoshop và cắt chúng từ PSD
+                        <p class="ma-bt-30px">I know "how to design websites" as Word, Photoshop, design Responsive Website, Application and android with Htm5, Css3, jQuery, JavaScript, PHP. I can cut PSD to Html.(Tôi học được, cách thiết kế website
+                          bằng Photoshop và cắt chúng từ PSD
                           sang HTML. Tôi học được cách thiết kế website đa dạo diện (Responsive). Cách làm ứng dụng android bằng html và jQuery UI Mobile Tôi còn được học các công nghệ như: Htm5, Css3, jQuery, JavaScript, PHP)</p>
                       </div>
                     </div>
@@ -529,7 +539,13 @@
   <!-- <script src="assets/js/lib/jquery-3.3.1.slim.min.js"></script> -->
   <script src="assets/js/lib/bootstrap.min.js"></script>
   <script src="assets/js/custom.js"></script>
-
+  <script>
+    $(function() {
+      $('.menu-toggle').click(function() {
+        $("#site_header").toggleClass('mobile-menu-hide');
+      })
+    });
+  </script>
 </body>
 
 </html>
