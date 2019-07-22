@@ -39,4 +39,21 @@ input[type=submit]:hover {
   background-color: $style-of-me;
   border-color: $style-of-me;
   color: #fff;
+  box-shadow: none;
+}
+
+.bg-success {
+  background-color: $style-of-me !important;
+}
+
+.bg-btn-warning {
+  color: #212529;
+  background-color: #ffc107;
+  border-color: #ffc107;
+
+  &:hover {
+    color: #212529 !important;
+    background-color: #e0a800 !important;
+    border-color: #e0a800 !important;
+  }
 }

@@ -373,7 +373,16 @@ textarea.form-control:focus {
 }
 /*======END BLOCK: CONTACT======*/
 /*======START BLOCK: EXPREIENCE======*/
-.pd-5px {
-  padding: 5px;
+
+.card{
+  border:none;
+  border-radius: 0;
+}
+
+
+.text-number-title {
+  color: #ffc107;
+  font-size: 110%;
+  margin-right: 10px;
 }
 /*======END BLOCK: EXPREIENCE======*/
