@@ -141,7 +141,6 @@
   }
 }
 /*======START BLOCK: SKILL======*/
-
 .pt-page {
   .section-inner {
     .section-title-block {
@@ -210,6 +209,7 @@
 }
 /*======END BLOCK: SKILL======*/
 /*======START BLOCK: EDUCATION======*/
+
 .education-wrapper {
   position: relative;
 
@@ -275,7 +275,6 @@ h5.year-graduated {
 }
 /*======END BLOCK: EDUCATION======*/
 /*======START BLOCK: CONTACT======*/
-
 .bg-heading-footer {
   background-image: url("../images/coding-wallpaper-1920x1080.jpg");
   position: relative;
@@ -311,11 +310,6 @@ h5.year-graduated {
       color: inherit;
     }
   }
-}
-
-.lm-info-block:hover {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
-  background: #fff;
 }
 
 input.form-control::placeholder,
@@ -373,12 +367,10 @@ textarea.form-control:focus {
 }
 /*======END BLOCK: CONTACT======*/
 /*======START BLOCK: EXPREIENCE======*/
-
-.card{
-  border:none;
+.card {
+  border: none;
   border-radius: 0;
 }
-
 
 .text-number-title {
   color: #ffc107;
