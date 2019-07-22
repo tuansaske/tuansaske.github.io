@@ -182,4 +182,12 @@ body::-webkit-scrollbar-thumb {
   .gform {
     margin-top: 15px;
   }
+
+  .education-wrapper:after {
+    left: -10px;
+  }
+
+  .education-wrapper .education:after {
+    left: -17px;
+  }
 }
