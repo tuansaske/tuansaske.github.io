@@ -556,7 +556,10 @@
     $(function() {
       $('.menu-toggle').click(function() {
         $("#site_header").toggleClass('mobile-menu-hide');
-      })
+      });
+      $('.pt-trigger').click(function(){
+        $("#site_header").addClass('mobile-menu-hide');
+      });
     });
   </script>
 </body>
